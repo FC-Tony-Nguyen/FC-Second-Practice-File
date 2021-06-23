@@ -16,18 +16,18 @@
 .header-menu{
   float: right;
   margin-right: 22%;
-  font-size:16px;
+  font-size: 16px;
   color: #fff;
 }
 /*------------------------------SECTIONN TOP----------------------------------*/
 .section-top{
-  background: linear-gradient(rgba(63, 71, 82, 0.9), rgba(63, 71, 82, 0.9)),  url(/image/macbook.png) no-repeat center;
+  background: linear-gradient(rgba(63, 71, 82, 0.9), rgba(63, 71, 82, 0.9)), url(../image/macbook.png) no-repeat center;
   text-align: center;
 }
-.section-top h1{
-  padding-top:200px;
+.section-top .section-top-title{
+  padding-top: 200px;
   padding-bottom: 20px;
-  font-size:70px;
+  font-size: 70px;
   color: #fff;
 }
 .orange{
@@ -36,7 +36,7 @@
 }
 .section-top-content{
   font-size: 25px;
-  width:55%;
+  width: 55%;
   margin: 0 auto;
   color: #fff;
   font-weight: 300;
@@ -64,14 +64,14 @@
 }
 /*----------------------------------------------SECTION INTRODUCTION--------------------------------------------------*/
 .section-introduction{
-  margin-top:100px;
+  margin-top: 100px;
 }
-.section-introduction ul{
+.section-introduction .introduction-img-wrapper{
   list-style-type: none;
   text-align: center;
 }
-.section-introduction li{
-  display:inline-block;
+.section-introduction .introduction-images{
+  display: inline-block;
   width: 20%;  
   cursor: pointer;
 }
@@ -85,12 +85,12 @@
   transition: all 0.5s linear;
   margin-bottom: 20px;
 }
-.section-introduction li:hover .introduction-img{
+.section-introduction .introduction-images:hover .introduction-img{
   border: 2px solid #f7600e;
 }
 .introduction-title{
   font-weight: 600;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 .introduction-content{
@@ -102,9 +102,9 @@
 }
 .introduction-form{
   text-align: center;
-  background: linear-gradient(rgba(63, 71, 82, 0.7), rgba(63, 71, 82, 0.7)),url(/image/tablet.png) no-repeat center;
-	width:100%;
-	height:250px;
+  background: linear-gradient(rgba(63, 71, 82, 0.7), rgba(63, 71, 82, 0.7)), url(../image/tablet.png) no-repeat center;
+	width: 100%;
+	height: 250px;
   position: relative;
   margin-bottom: 100px;
 }
@@ -114,28 +114,28 @@
   top: 50%;
 	transform: translate(0,-50%)
 }
-.introduction-form input{
+.introduction-form .subscribe-input{
   margin-right: 20px;
   width: 30%;
   height:50px;
   border-radius: 10px;
   padding-left: 20px;
-  border:none;
+  border: none;
   font-size: 16px;
 }
-.introduction-form button{
+.introduction-form .subscribe-button{
   width: 15%;
-	height:50px;
+	height: 50px;
 	border-radius: 10px;
 	background-color: #f7600e;
-	border:none;
+	border: none;
 	font-weight: 600;
 	color: #fff;
 	font-size: 16px;
 	cursor: pointer;
 	transition: all 0.5s linear;
 }
-.introduction-form button:hover{
+.introduction-form .subscribe-button:hover{
   background-color: #fff;
   color: #f7600e
 }
@@ -144,40 +144,40 @@
   text-align: center;
   width: 100%;
 }
-.section-ourwork h2{
+.section-ourwork .ourwork-title{
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.ourwork-title-lowercase{
+.ourwork-text{
   width: 25%;
   font-size: 16px;
   margin: 0 auto;
   font-weight: 400;
   margin-bottom: 100px;
 }
-.section-ourwork ul{
+.section-ourwork .ourwork-img-wrapper{
   list-style-type: none;
   text-align: center;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
-.section-ourwork li{
+.section-ourwork .ourwork-images{
   display: inline-block;
   position: relative;
   padding-right: 20px;
 }
-.section-ourwork li:hover .ourwork-hidden-wrapper{
+.section-ourwork .ourwork-images:hover .ourwork-hidden-wrapper{
   display: block;
 }
 .ourwork-img{
-  height:350px;
+  height: 350px;
 	width: 100%;
 	padding: 15px;
 }
 .ourwork-hidden-wrapper{
-  height:350px;
+  height: 350px;
 	width: 95.2%;
 	background-color:rgba(248, 112, 38, 0.9);    
 	position: absolute;
@@ -188,7 +188,7 @@
 }
 .ourwork-hidden-title{
   margin: 20% 0 20px 10%;
-  font-size:25px;
+  font-size: 25px;
 	color: #fff;
 }
 .ourwork-hidden-content{
@@ -199,7 +199,7 @@
   margin-bottom: 70px;
 }
 .ourwork-hidden-button{
-	padding:10px 40px;
+	padding: 10px 40px;
 	font-size: 16px;
 	border-radius: 10px;
 	border: none;
@@ -216,7 +216,7 @@
 .ourwork-showmore-button{
   padding: 10px 40px;  
   margin-bottom: 100px;
-	border-radius:10px;
+	border-radius: 10px;
 	border: 1px solid #d8d9db;
 	background-color: #fff;
 	font-weight: 600;
@@ -232,12 +232,12 @@
   text-align: center;
   width: 100%;
 }
-.ourteam-title-uppercase{
+.ourteam-title{
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.ourteam-title-lowercase{
+.ourteam-text{
   width: 25%;
   font-size: 16px;
   margin: 0 auto;
@@ -263,7 +263,7 @@
 	width: 100%;
 	bottom: 0;
 }
-.ourteam-slider-menu label{
+.ourteam-slider-menu .slider-menu-dot{
   cursor: pointer;
 	display: inline-block;
 	width: 16px;
@@ -273,7 +273,7 @@
 	margin: 0 .2em 1em;
 	transition: all .3s ease;
 }
-.ourteam-slider-menu label:hover{
+.ourteam-slider-menu .slider-menu-dot:hover{
   background-color: red;
 }
 .ourteam-slide{
@@ -288,7 +288,7 @@
 	background-position: 50% 50%;
 	transition: left 0s .75s;
 }
-.ourteam-slide li{
+.ourteam-slide .ourteam-slides-wrapper{
   display: inline-block;
   width: 15%;
 }
@@ -303,10 +303,10 @@
   background-color: #f7600e;
 	margin: 0 auto;
 	width: 88%;
-  height:310px;
+  height: 310px;
 	border-radius: 10px;
 }
-.slide-img-wrapper img{
+.slide-img-wrapper .ourteam-slide-img{
   height: 310px;
 	transition: all 0.5s;
 	width: 100%;
@@ -314,34 +314,37 @@
 }
 .slide-name{
   font-weight: 600;
-	font-size:25px;
+	font-size: 25px;
 	color: #a3a7ab;
 	transition: all 0.5s;
   padding-top: 20px;
 }
-.slide-content li{
+.slide-content .slide-content-brand{
+  letter-spacing: 20px;
+}
+.slide-content .slide-brands{
   padding-top: 20px;
-	letter-spacing: 20px;
 	filter: grayscale(100%);
 	transition: all 0.5s;
+  display: inline-block;
 }
 .slide-info{
   padding-top: 20px;
 	width: 100%;
 }
-.slide-info p{
+.slide-info .slide-info-text{
   font-size: 14px;
 		color: #a3a7ab;
 		transition: all 0.5s;
 }
-.ourteam-slide-wrapper:hover .slide-img-wrapper img{
+.ourteam-slide-wrapper:hover .slide-img-wrapper .ourteam-slide-img{
   transform:translateY(-20px);
   filter: grayscale(0);
 }
-.ourteam-slide-wrapper:hover .slide-name, .ourteam-slide-wrapper:hover .slide-info p{
+.ourteam-slide-wrapper:hover .slide-name, .ourteam-slide-wrapper:hover .slide-info .slide-info-text{
   color: #000;
 }
-.ourteam-slide-wrapper:hover .slide-content li{
+.ourteam-slide-wrapper:hover .slide-content .slide-brands{
   filter: grayscale(0);
 }
 [id^="slide"]:checked + .ourteam-slide {
@@ -350,20 +353,20 @@
   transition: left .65s ease-out;
 }
 
-.slide-1 {
+.slide-one {
   background-color: #fff;
 }
-.slide-2 {
+.slide-two {
   background-color: #fff;
 }
-.slide-3 {
+.slide-three {
   background-color: #fff;
 }
 /* --------------------------------------------FOOTER--------------------------------------------*/
 .footer{
   text-align: center;
   width: 100%;
-  background: linear-gradient(rgba(63, 71, 82, 0.7), rgba(63, 71, 82, 0.7)),  url(/image/city.png);
+  background: linear-gradient(rgba(63, 71, 82, 0.7), rgba(63, 71, 82, 0.7)), url(../image/city.png);
 }
 .footer-title-uppercase{
   font-size: 35px;
@@ -407,13 +410,13 @@
 .footer-button-wrapper{
   width: 61%;
 	margin: 0 auto;
-  height:100px;
+  height: 100px;
 }
 
 .footer-button{
   padding: 10px 60px;
 	margin-top: 20px;
-  float:left;
+  float: left;
   margin-left: 6%;
 	border-radius: 10px;
 	border: none;
@@ -423,17 +426,21 @@
 	cursor: pointer;
 	transition: all 0.5s;
 }
-.footer-button-wrapper ul{
+.footer-button:hover{
+  background-color: #fff;
+  color: #f7600e;
+}
+.footer-button-wrapper .footer-brands-wrapper{
   float: right;
   width: 30%;
   margin-right: 3%;
 	margin-top: 20px;
 	letter-spacing: 15px;
 }
-.footer-button-wrapper li{
+.footer-button-wrapper .footer-brand{
   display: inline-block;
 }
-.footer-button-wrapper img{
+.footer-button-wrapper .footer-brand-logo{
   width: 40px;
 }
 .subfooter{
@@ -456,7 +463,7 @@
   position: absolute;	
 }
 .subfooter-righttext{
-  float:right;
+  float: right;
   margin-right: 15%;
 }
 .righttext{
