@@ -42,10 +42,10 @@
   font-weight: 300;
   padding-bottom: 60px;
 }
-.section-top-button{
+.section-top-buttons{
   padding-bottom: 260px;
 }
-.section-top-button button{
+.section-top-buttons .section-top-button{
   background-color: transparent;
   color: #fff;
   width: 10%;
@@ -56,10 +56,10 @@
   cursor: pointer;
   transition: all 0.5s linear;
 }
-.section-top-button button:first-child{
+.section-top-buttons .section-top-button:first-child{
   margin-right: 40px;
 }
-.section-top-button button:hover{
+.section-top-buttons .section-top-button:hover{
   background-color: #f7600e;
 }
 /*----------------------------------------------SECTION INTRODUCTION--------------------------------------------------*/
@@ -95,7 +95,7 @@
 }
 .introduction-content{
   width: 50%;
-  font-size: 14px;
+  font-size: 0.8vw;
   line-height: 25px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -314,7 +314,7 @@
 }
 .slide-name{
   font-weight: 600;
-	font-size: 25px;
+	font-size: 1.4vw;
 	color: #a3a7ab;
 	transition: all 0.5s;
   padding-top: 20px;
@@ -333,7 +333,7 @@
 	width: 100%;
 }
 .slide-info .slide-info-text{
-  font-size: 14px;
+  font-size: 0.8vw;
 		color: #a3a7ab;
 		transition: all 0.5s;
 }
@@ -477,4 +477,217 @@
 .righttext-dot{
   font-weight: 600;
   color: red;
+}
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 1191px ) and (min-width: 976px){
+  .section-top{
+  height: 782px;
+  }
+  .section-top .section-top-title{
+    font-size: 8vw;
+  }
+  .introduction-content{
+    font-size: 1vw;
+  }
+  .ourwork-text{
+    width: 50%;
+  }
+  .ourteam-text{
+    width: 50%;
+  }
+  .slide-content .slide-content-brand{
+    letter-spacing: 10px;
+  }
+  .footer-title-lowercase{
+    width: 60%
+  }
+}
+@media only screen and (max-width: 976px) and (min-width: 760px){
+  .section-top-buttons .section-top-button{
+    width: 20%;
+  }
+  .section-top{
+    height: 782px;
+    }
+  .introduction-images{
+    width: 50%;
+  }
+  .section-introduction .introduction-content{
+    width: 100%;
+    font-size: 1vw;
+  }
+  .introduction-form .subscribe-input{
+    font-size: 1.5vw;
+  }
+  .ourwork-text{
+    width: 50%;
+  }
+  .ourteam-text{
+    width: 50%;
+  }
+  .ourteam-slide .ourteam-slides-wrapper{
+    width: 30%;
+    padding: 0 50px;
+  }
+  .ourteam-slider{
+    height: 800px;
+  }
+  .slide-img-wrapper {
+    height: 220px
+  }
+  .slide-img-wrapper .ourteam-slide-img{
+    height: 220px
+  }
+  .slide-info .slide-info-text{
+    font-size: 1vw;
+  }
+  .slide-content .slide-content-brand{
+    letter-spacing: 10px;
+  }
+  .slide-name{
+    padding-top: 10px;
+  }
+  .slide-content .slide-brands{
+    padding-top: 10px;
+  }
+  .slide-info{
+    padding-top: 10px;
+  }
+  .footer-title-lowercase{
+    width: 60%
+  }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 581px){
+  .section-top{
+    height: 782px;
+    }
+    .section-top .section-top-title{
+      font-size: 8vw;
+    }
+    .section-top-buttons .section-top-button{
+      width: 20%;
+    }
+  .section-introduction .introduction-images{
+    width: 40%;
+  }
+  .introduction-content{
+    font-size: 2vw;
+  }
+  .introduction-form .subscribe-input{
+    font-size: 1.5vw;
+    height: 40px;
+  }
+  .introduction-form .subscribe-button{
+    font-size: 1.5vw;
+    height: 40px;
+  }
+  .ourwork-text{
+    width: 50%;
+  }
+  .ourteam-text{
+    width: 50%;
+  }
+  .ourteam-slider{
+    height: 800px;
+  }
+  .ourteam-slide .ourteam-slides-wrapper{
+    width: 20%;
+    padding: 0 50px;
+  }
+  .slide-img-wrapper {
+    height: 220px
+  }
+  .slide-img-wrapper .ourteam-slide-img{
+    height: 220px
+  }
+  .slide-content .slide-content-brand{
+    letter-spacing: 5px;
+  }
+  .slide-name{
+    padding-top: 10px;
+  }
+  .slide-content .slide-brands{
+    padding-top: 10px;
+  }
+  .slide-info{
+    padding-top: 10px;
+  }
+  .slide-info .slide-info-text{
+    font-size: 1.4vw;
+  }
+  .footer-title-lowercase{
+    width: 60%
+  }
+}
+@media only screen and (max-width: 581px){
+  .section-top{
+    height: 782px;
+    }
+  .section-top .section-top-title{
+    font-size: 8vw;
+  }
+  .section-top-content{
+   width: 90%;
+   font-size: 5vw;
+  }
+  .section-top-buttons .section-top-button{
+    margin-right: 0;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .header-logo{
+    width: 30%;
+  }
+  .section-introduction .introduction-images{
+    width: 40%;
+  }
+  .introduction-content{
+    font-size: 2vw;
+  }
+  .introduction-form .subscribe-input{
+    font-size: 1.5vw;
+    height: 30px;
+  }
+  .introduction-form .subscribe-button{
+    font-size: 1.5vw;
+    height: 30px;
+  }
+  .ourwork-text{
+    width: 50%;
+  }
+  .ourteam-text{
+    width: 70%;
+  }
+  .ourteam-slider{
+    height: 900px;
+  }
+  .ourteam-slide .ourteam-slides-wrapper{
+    width: 25%;
+    padding: 0 50px;
+  }
+  .slide-img-wrapper {
+    height: 220px
+  }
+  .slide-img-wrapper .ourteam-slide-img{
+    height: 220px
+  }
+  .slide-content .slide-content-brand{
+    letter-spacing: 5px;
+  }
+  .slide-name{
+    padding-top: 10px;
+  }
+  .slide-content .slide-brands{
+    padding-top: 10px;
+  }
+  .slide-info{
+    padding-top: 10px;
+  }
+  .slide-info .slide-info-text{
+    font-size: 2vw;
+  }
+  .footer-title-lowercase{
+    width: 60%
+  }
 }
